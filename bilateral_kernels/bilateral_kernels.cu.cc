@@ -5,7 +5,8 @@
 #if GOOGLE_CUDA
 #define EIGEN_USE_GPU
 #include "third_party/eigen3/unsupported/Eigen/CXX11/Tensor"
-#include "tensorflow/core/util/cuda_kernel_helper.h"
+//#include "tensorflow/core/util/cuda_kernel_helper.h"
+#include "tensorflow/core/util/gpu_kernel_helper.h"
 #include <iostream>
 
 using namespace tensorflow;

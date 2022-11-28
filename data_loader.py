@@ -57,7 +57,7 @@ class dataLoader(object):
 			self.encode_to_tfrecords(subset)
 
 	def encode_to_tfrecords(self, subset):
-		writer = tf.python_io.TFRecordWriter(self.dataset_name)
+		writer = tf.io.TFRecordWriter(self.dataset_name)
 		print(self.subset, 'Data_dir ', self.data_dir)
 		if subset == 'train' or subset == 'valid':
 			for scene_name in self.scene_list:

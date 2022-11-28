@@ -11,7 +11,7 @@ import tensorflow as tf
 from tensorflow.python.framework import ops
 
 path = os.path.dirname(os.path.abspath(__file__))
-path_grid = tf.resource_loader.get_path_to_datafile(
+path_grid = tf.compat.v1.resource_loader.get_path_to_datafile(
     os.path.join(path, 'bilateral_kernels', 'bilateral_kernels.so'))
 
 bilateral = tf.load_op_library(path_grid)
